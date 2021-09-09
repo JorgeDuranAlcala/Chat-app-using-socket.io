@@ -1,3 +1,5 @@
-import { io } from "socket.io-client";
+const socket = io();
 
-i;
+socket.on("hello", (msg) => {
+  document.write(msg);
+});
